@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Deliciosa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5ec;
+        }
+
+        header {
+            background-color: #e44d26;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #e44d26;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #e44d26;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #d04022;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Panadería Deliciosa</h1>
+    </header>
+    <main>
+        <h2>Nuestros Productos</h2>
+        <p>Bienvenido a nuestra panadería, donde encontrarás una variedad de productos frescos y deliciosos.</p>
+        <ul>
+            <li>Pan de trigo integral</li>
+            <li>Bollos de canela</li>
+            <li>Croissants de mantequilla</li>
+            <li>Pastelitos de frutas</li>
+        </ul>
+        <p>¡Visítanos y disfruta de la auténtica experiencia de la panadería!</p>
+        <button onclick="mostrarPromocion()">Ver Promoción del Día</button>
+        <p id="promocion" style="display:none;">Hoy: ¡Compra dos bollos de canela y lleva el tercero gratis!</p>
+    </main>
+    <script>
+        function mostrarPromocion() {
+            var promocion = document.getElementById('promocion');
+            promocion.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
